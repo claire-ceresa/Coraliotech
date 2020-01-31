@@ -8,6 +8,7 @@ from object.CDS import CDS
 class Protein:
 
     def __init__(self, id):
+
         self.id = id
         self.sequence = None
         self.name = None
@@ -95,7 +96,10 @@ class Protein:
     def set_notes(self):
         """set the attribute note"""
         if self.feature_gene is not None:
-            self.note = " ".join(self.feature_gene.qualifiers["note"])
+            try:
+                self.note = " ".join(self.feature_gene.qualifiers["note"])
+            except Exception as e:
+                print(e)
 
     def set_is_predicted(self):
         """set the boolean is_predicted"""
