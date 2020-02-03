@@ -41,7 +41,6 @@ class Protein:
         else:
             self.sequence = SeqIO.read(fiche, "genbank")
 
-
     def set_features(self):
         """set the attributes concerning features"""
         self.set_feature_cds()
@@ -132,4 +131,13 @@ class Protein:
         """check some precise exception and print a message if needed"""
         if self.cds.offset is not None and self.cds.offset > 1:
             print(str(self.id) + " : codon start > 1 --> verifier la taille du cds pour confirmation formule")
+
+    def save_genbank_file(self):
+        SeqIO.write(self.sequence, "fiche.txt", "genbank")
+
+        # TO PRINT IT INTO PYQT
+        # text_edit = QPlainTextEdit()
+        # ...
+        # text=open('file.txt').read()
+        # text_edit.setPlainText(text)
 

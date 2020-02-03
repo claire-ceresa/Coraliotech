@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4a6430d2-5697-4c59-833e-b7078f6c7be7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Actiniaria_mRNA_collagen.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Alcyonacea_mRNA_collagen.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Scleractinia_mRNA_collagen.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/object/Protein.py" beforeDir="false" afterPath="$PROJECT_DIR$/object/Protein.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/object/Search.py" beforeDir="false" afterPath="$PROJECT_DIR$/object/Search.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,6 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WePjy3ZSJ4K6s5xGN6DyFvxt9K" />
@@ -112,6 +113,14 @@
       <option name="presentableId" value="Default" />
       <updated>1579507226782</updated>
     </task>
+    <task id="LOCAL-00001" summary="Réparation du set_note.">
+      <created>1580478762934</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580478762934</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +135,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Réparation du set_note." />
+    <option name="LAST_COMMIT_MESSAGE" value="Réparation du set_note." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
