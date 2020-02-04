@@ -138,6 +138,6 @@ class Protein:
         # TO PRINT IT INTO PYQT
         # text_edit = QPlainTextEdit()
         # ...
-        # text=open('file.txt').read()
+        # text=open('fiche.txt').read()
         # text_edit.setPlainText(text)
 
