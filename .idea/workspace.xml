@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a6430d2-5697-4c59-833e-b7078f6c7be7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fiche.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphic/Product.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphic/product_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphic/Principal.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphic/Principal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/object/Protein.py" beforeDir="false" afterPath="$PROJECT_DIR$/object/Protein.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphic/NCBI.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphic/NCBI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphic/ncbi_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphic/ncbi_view.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580827702422</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Creation de la fiche produit">
+      <created>1580830265801</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580830265801</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,7 +157,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Réparation du set_note." />
     <MESSAGE value="Creation de la nouvelle interface graphique" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation de la nouvelle interface graphique" />
+    <MESSAGE value="Creation de la fiche produit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation de la fiche produit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
