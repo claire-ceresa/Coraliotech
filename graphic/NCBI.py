@@ -2,23 +2,17 @@ from os import listdir
 import json
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import QPixmap
-from graphic.view import *
+from graphic.ncbi_view import *
 from object.Search import Search
 
 
-class Controller(QMainWindow, Ui_MainWindow):
+class NCBI(QMainWindow, Ui_MainWindow):
 
     def __init__(self, parent=None):
-        super(Controller, self).__init__(parent)
+        super(NCBI, self).__init__(parent)
         self.setupUi(self)
         self.setWindowTitle("Rechercher")
         self.fill_box_type()
-        self.set_image()
-
-    def set_image(self):
-        """set the logo on the"""
-        picture = QPixmap("logo.png")
-        self.label_image.setPixmap(picture)
 
     def fill_box_type(self):
         """fill the comboBox with the name of the created styles"""
