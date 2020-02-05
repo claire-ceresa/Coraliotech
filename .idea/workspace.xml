@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4a6430d2-5697-4c59-833e-b7078f6c7be7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphic/NCBI.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphic/NCBI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphic/ncbi_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphic/ncbi_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fiche.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mRNA collagen - 24012020.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_collagen.xlsx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580830265801</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Modification de la fenetre de recherche sur NCBI">
+      <created>1580831701194</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580831701194</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,7 +166,8 @@
     <MESSAGE value="Réparation du set_note." />
     <MESSAGE value="Creation de la nouvelle interface graphique" />
     <MESSAGE value="Creation de la fiche produit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation de la fiche produit" />
+    <MESSAGE value="Modification de la fenetre de recherche sur NCBI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification de la fenetre de recherche sur NCBI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
