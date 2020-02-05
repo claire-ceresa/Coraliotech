@@ -14,11 +14,66 @@ class NCBI(QMainWindow, Ui_MainWindow):
         self.setWindowTitle("Telecharger")
         #     self.fill_box_type()
 
+    def button_write_clicked(self):
+        if self.organism_written():
+            terms = self.get_request_terms()
+            request = self.create_request(terms)
+            self.edit_request.setEnabled(True)
+            self.edit_request.setText(request)
+            self.button_go.setEnabled(True)
+
     def button_go_clicked(self):
         return
 
-    def button_write_clicked(self):
-        return
+    def organism_written(self):
+        if len(self.edit_org.text()) == 0:
+            message = QMessageBox()
+            message.setText("Remplir un organisme !")
+            message.setWindowTitle("Attention !")
+            message.exec()
+            return False
+        return True
+
+    def get_request_terms(self):
+        terms = dict()
+        terms["organism"] = self.edit_org.text()
+        keys = self.edit_keys.text()
+        in_terms = self.edit_in.text()
+        out_terms = self.edit_out.text()
+
+        if len(keys) > 0:
+            terms["keys"] = keys.split(" ")
+        else:
+            terms["keys"] = []
+
+        if len(in_terms) > 0:
+            terms["in_terms"] = in_terms.split(" ")
+        else:
+            terms["in_terms"] = []
+
+        if len(out_terms) > 0:
+            terms["out_terms"] = out_terms.split(" ")
+        else:
+            terms["out_terms"] = []
+
+        return terms
+
+    def create_request(self, terms):
+        beginning = terms["organism"]
+        and_terms = ""
+        not_terms = ""
+
+        for key in terms["keys"]:
+            and_terms = and_terms + " AND " + key
+        for in_term in terms["in_terms"]:
+            and_terms = and_terms + " AND " + in_term + " [Title]"
+        for out_term in terms["out_terms"]:
+            not_terms = not_terms + " NOT " + out_term + " [Title]"
+
+        request = beginning + and_terms + not_terms
+        return request
+
+
 
     # TODO : reprendre toute la classe avec nouvelle nomenclature
 

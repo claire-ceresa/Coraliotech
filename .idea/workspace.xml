@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a6430d2-5697-4c59-833e-b7078f6c7be7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/fiche.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fiche.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mRNA collagen - 24012020.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_collagen.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coraliotech_db.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/coraliotech_db.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphic/NCBI.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphic/NCBI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphic/ncbi_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphic/ncbi_view.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,10 +38,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\claire\PycharmProjects\Coraliotech_20012020" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\claire\PycharmProjects\Coraliotech_28012020\database" />
+      <recent name="C:\Users\claire\PycharmProjects\Coraliotech_28012020" />
       <recent name="C:\Users\claire\PycharmProjects\Coraliotech_20012020" />
     </key>
   </component>
@@ -145,7 +148,21 @@
       <option name="project" value="LOCAL" />
       <updated>1580831701194</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Suppression de fichier inutiles">
+      <created>1580894766687</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1580894766687</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Ajout de la base de donnees">
+      <created>1580894822650</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1580894822650</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,7 +184,10 @@
     <MESSAGE value="Creation de la nouvelle interface graphique" />
     <MESSAGE value="Creation de la fiche produit" />
     <MESSAGE value="Modification de la fenetre de recherche sur NCBI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification de la fenetre de recherche sur NCBI" />
+    <MESSAGE value="Suppression de fichier inutiles" />
+    <MESSAGE value="Ajout de la base de donnees" />
+    <MESSAGE value="Creation de l'action du bouton &quot;Ecrire la requete&quot; de la fenetre NCBI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation de l'action du bouton &quot;Ecrire la requete&quot; de la fenetre NCBI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
