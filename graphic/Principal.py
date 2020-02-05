@@ -3,6 +3,7 @@ from PyQt5.QtGui import QPixmap
 from graphic.principal_view import *
 from graphic.NCBI import NCBI
 from graphic.Product import Product
+from database.functions_db import *
 
 class Principal(QMainWindow, Ui_MainWindow):
 
@@ -14,7 +15,7 @@ class Principal(QMainWindow, Ui_MainWindow):
         self.window_complete = Product(id="EU159467.1")
 
     def set_image(self):
-        """set the logo on the"""
+        """set the logo on the window"""
         picture = QPixmap("logo.png")
         self.label_image.setPixmap(picture)
 

@@ -12,7 +12,6 @@ class NCBI(QMainWindow, Ui_MainWindow):
         super(NCBI, self).__init__(parent)
         self.setupUi(self)
         self.setWindowTitle("Telecharger")
-        #     self.fill_box_type()
 
     def button_write_clicked(self):
         if self.organism_written():

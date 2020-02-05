@@ -1,6 +1,7 @@
 from graphic.product_view import Ui_MainWindow
 from PyQt5.QtWidgets import QMainWindow
 from object.Protein import Protein
+import sqlite3 as s
 
 class Product(QMainWindow, Ui_MainWindow):
 
@@ -8,7 +9,6 @@ class Product(QMainWindow, Ui_MainWindow):
             super(Product, self).__init__(parent)
             self.setupUi(self)
             self.id = id
-
             self.setWindowTitle(self.id)
             self.set_fiche()
 

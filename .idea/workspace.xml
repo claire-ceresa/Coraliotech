@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a6430d2-5697-4c59-833e-b7078f6c7be7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fiche.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coraliotech_test_db.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/coraliotech_test_db.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/functions_db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poulpator.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coraliotech_db.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/coraliotech_db.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphic/NCBI.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphic/NCBI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphic/ncbi_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphic/ncbi_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphic/Principal.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphic/Principal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphic/Product.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphic/Product.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,10 +38,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\claire\PycharmProjects\Coraliotech_28012020\database" />
       <recent name="C:\Users\claire\PycharmProjects\Coraliotech_20012020" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -162,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580894822650</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Creation de l'action du bouton &quot;Ecrire la requete&quot; de la fenetre NCBI">
+      <created>1580899054700</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1580899054700</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,11 +206,6 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/algorithms.py</url>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/graphic/NCBI.py</url>
-          <line>3</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
