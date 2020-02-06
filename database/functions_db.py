@@ -4,11 +4,15 @@ database = "database\coraliotech_test_db.db"
 
 
 def commit_query(query):
-    connection = s.connect(database)
-    cursor = connection.cursor()
-    cursor.execute(query)
-    connection.commit()
-    connection.close()
+    try:
+        connection = s.connect(database)
+        cursor = connection.cursor()
+        cursor.execute(query)
+        connection.commit()
+        connection.close()
+        return True
+    except:
+        return False
 
 
 def execute_query(query):

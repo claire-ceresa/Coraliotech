@@ -5,6 +5,7 @@ from PyQt5.QtGui import QPixmap
 from graphic.ncbi_view import *
 from object.Search import Search
 from object.Protein import Protein
+from database.functions_db import *
 
 
 class NCBI(QMainWindow, Ui_MainWindow):
@@ -26,9 +27,79 @@ class NCBI(QMainWindow, Ui_MainWindow):
         request = self.edit_request.text()
         search = Search(request)
         list_id = search.get_list_ids()
+
+        nb_product_saved = 0
+        product_not_saved = []
+
         if len(list_id) > 0:
             for id in list_id:
                 protein = Protein(id)
+                if self.check_exceptions(protein) and self.save_protein(protein):
+                    nb_product_saved = nb_product_saved + 1
+                else:
+                    product_not_saved.append(protein.id)
+
+        message = str(nb_product_saved) + "resultat enregistre dans la base de donnees"
+        if len(product_not_saved) > 0:
+            message = message + "\n " + str(len(product_not_saved)) + " non enregistres : " + " , ".join(product_not_saved)
+        self.label_messages.setText(message)
+
+
+
+    def check_exceptions(self, protein):
+        if protein.molecular_weight is None:
+            return False
+        if protein.name is None:
+            return False
+        return True
+
+    def save_protein(self, protein):
+        self.save_cds(protein)
+        self.save_organism(protein)
+        try:
+            self.save_product(protein)
+        except:
+            return False
+        else:
+            return True
+
+    def save_cds(self, protein):
+        datas_cds = {}
+        datas_cds["id"] = "\"cds_" + protein.id + "\""
+        datas_cds["debut"] = str(protein.cds.start)
+        datas_cds["fin"] = str(protein.cds.stop)
+        datas_cds["poids_moleculaire"] = str(protein.molecular_weight)
+        datas_cds["complete"] = "0" if protein.is_partial else "1"
+        query = get_query_insert("CDS", datas_cds)
+        commit_query(query)
+
+    def save_organism(self, protein):
+        datas_org = {}
+        datas_org["espece"] = "\"" + protein.species.species + "\"" if protein.species.species is not None else "NULL"
+        datas_org["genre"] = "\"" + protein.species.genus + "\"" if protein.species.genus is not None else "NULL"
+        datas_org["famille"] = "\"" + protein.species.family + "\"" if protein.species.family is not None else "NULL"
+        datas_org["ordre"] = "\"" + protein.species.order + "\"" if protein.species.order is not None else "NULL"
+        datas_org["sous_classe"] = "\"" + protein.species.subclass + "\"" if protein.species.subclass is not None else "NULL"
+        datas_org["classe"] = "\"" + protein.species.classe + "\"" if protein.species.classe is not None else "NULL"
+        datas_org["embranchement"] = "\"" + protein.species.phylum + "\"" if protein.species.phylum is not None else "NULL"
+        query = get_query_insert("Organisme", datas_org)
+        print(query)
+        commit_query(query)
+
+    def save_product(self, protein):
+        datas_prod = {}
+        datas_prod["id"] = "\"" + protein.id + "\""
+        datas_prod["nom"] = "\"" + protein.name + "\""
+        datas_prod["source"] = "\"NCBI\""
+        datas_prod["note"] = "\"" + protein.note + "\"" if protein.note is not None else "NULL"
+        datas_prod["espece"] = "\"" + protein.species.species + "\""
+        datas_prod["id_cds"] = "\"cds_" + protein.id + "\""
+        datas_prod["predicted"] = "1" if protein.is_predicted else "0"
+        query = get_query_insert("Produit", datas_prod)
+        commit_query(query)
+
+
+
 
     def organism_written(self):
         if len(self.edit_org.text()) == 0:

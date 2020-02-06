@@ -32,9 +32,15 @@ class Organism:
 
     def set_properties(self):
         self.species = self.taxonomy[0]["ScientificName"]
-        self.genus = next((item for item in self.lineage if item["Rank"] == "genus"), None)["ScientificName"]
-        self.family = next((item for item in self.lineage if item["Rank"] == "family"), None)["ScientificName"]
-        self.order = next((item for item in self.lineage if item["Rank"] == "order"), None)["ScientificName"]
-        self.subclass = next((item for item in self.lineage if item["Rank"] == "subclass"), None)["ScientificName"]
-        self.classe = next((item for item in self.lineage if item["Rank"] == "class"), None)["ScientificName"]
-        self.phylum = next((item for item in self.lineage if item["Rank"] == "phylum"), None)["ScientificName"]
+        genus = next((item for item in self.lineage if item["Rank"] == "genus"), None)
+        self.genus = genus["ScientificName"] if genus is not None else None
+        family = next((item for item in self.lineage if item["Rank"] == "family"), None)
+        self.family = family["ScientificName"] if family is not None else None
+        order = next((item for item in self.lineage if item["Rank"] == "order"), None)
+        self.order = order["ScientificName"] if order is not None else None
+        subclass = next((item for item in self.lineage if item["Rank"] == "subclass"), None)
+        self.subclass = subclass["ScientificName"] if subclass is not None else None
+        classe = next((item for item in self.lineage if item["Rank"] == "class"), None)
+        self.classe = classe["ScientificName"] if classe is not None else None
+        phylum = next((item for item in self.lineage if item["Rank"] == "phylum"), None)
+        self.phylum = phylum["ScientificName"] if phylum is not None else None
