@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a6430d2-5697-4c59-833e-b7078f6c7be7" name="Default Changelist" comment="">
+    <list default="true" id="4a6430d2-5697-4c59-833e-b7078f6c7be7" name="Default Changelist" comment="Creation des fonctions de gestion de la base de données">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/coraliotech_test_db.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/coraliotech_test_db.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/functions_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/functions_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphic/NCBI.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphic/NCBI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object/Organism.py" beforeDir="false" afterPath="$PROJECT_DIR$/object/Organism.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object/Protein.py" beforeDir="false" afterPath="$PROJECT_DIR$/object/Protein.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object/Search.py" beforeDir="false" afterPath="$PROJECT_DIR$/object/Search.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,6 +108,8 @@
       <list>
         <item itemvalue="Python.main" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580921642037</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Creation des fonctions de gestion de la base de données">
+      <created>1580981571330</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1580981571330</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,7 +213,8 @@
     <MESSAGE value="Ajout de la base de donnees" />
     <MESSAGE value="Creation de l'action du bouton &quot;Ecrire la requete&quot; de la fenetre NCBI" />
     <MESSAGE value="Mise en place de la connexion avec la base de donnees. Creation des fonctions insertions applications_possibles et organisme." />
-    <option name="LAST_COMMIT_MESSAGE" value="Mise en place de la connexion avec la base de donnees. Creation des fonctions insertions applications_possibles et organisme." />
+    <MESSAGE value="Creation des fonctions de gestion de la base de données" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation des fonctions de gestion de la base de données" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

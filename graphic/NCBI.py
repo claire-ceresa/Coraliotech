@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import QPixmap
 from graphic.ncbi_view import *
 from object.Search import Search
+from object.Protein import Protein
 
 
 class NCBI(QMainWindow, Ui_MainWindow):
@@ -22,7 +23,12 @@ class NCBI(QMainWindow, Ui_MainWindow):
             self.button_go.setEnabled(True)
 
     def button_go_clicked(self):
-        return
+        request = self.edit_request.text()
+        search = Search(request)
+        list_id = search.get_list_ids()
+        if len(list_id) > 0:
+            for id in list_id:
+                protein = Protein(id)
 
     def organism_written(self):
         if len(self.edit_org.text()) == 0:
