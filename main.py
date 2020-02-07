@@ -1,7 +1,7 @@
 import sys
 from Bio import Entrez
 from PyQt5.QtWidgets import QApplication
-from graphic.Principal import Principal
+from graphic.Principal_Window import Principal
 
 Entrez.email = "claire.ceresa@hotmail.fr"
 

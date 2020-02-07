@@ -3,8 +3,8 @@ import json
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import QPixmap
 from graphic.ncbi_view import *
-from object.Search import Search
-from object.Protein import Protein
+from object.NCBI_Search import NCBI_Search
+from object.NCBI_Protein import NCBI_Protein
 from database.functions_db import *
 
 
@@ -25,7 +25,7 @@ class NCBI(QMainWindow, Ui_MainWindow):
 
     def button_go_clicked(self):
         request = self.edit_request.text()
-        search = Search(request)
+        search = NCBI_Search(request)
         list_id = search.get_list_ids()
 
         nb_product_saved = 0
@@ -33,7 +33,7 @@ class NCBI(QMainWindow, Ui_MainWindow):
 
         if len(list_id) > 0:
             for id in list_id:
-                protein = Protein(id)
+                protein = NCBI_Protein(id)
                 if self.check_exceptions(protein) and self.save_protein(protein):
                     nb_product_saved = nb_product_saved + 1
                 else:
@@ -70,7 +70,7 @@ class NCBI(QMainWindow, Ui_MainWindow):
         datas_cds["fin"] = str(protein.cds.stop)
         datas_cds["poids_moleculaire"] = str(protein.molecular_weight)
         datas_cds["complete"] = "0" if protein.is_partial else "1"
-        query = get_query_insert("CDS", datas_cds)
+        query = get_query_insert("NCBI_CDS", datas_cds)
         commit_query(query)
 
     def save_organism(self, protein):
@@ -173,7 +173,7 @@ class NCBI(QMainWindow, Ui_MainWindow):
     #         organism = infos[0]
     #         request = infos[1]
     #         type = infos[2]
-    #         search = Search(organism=organism, request=request, type=type)
+    #         search = NCBI_Search(organism=organism, request=request, type=type)
     #
     #     except Exception as e:
     #         self.label_error.setText("ERROR : " + str(e))

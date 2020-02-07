@@ -39,6 +39,3 @@ def get_applications_possibles():
     result = execute_query(query)
     return result
 
-def get_query_select():
-    return
-

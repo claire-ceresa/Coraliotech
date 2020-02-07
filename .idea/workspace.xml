@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a6430d2-5697-4c59-833e-b7078f6c7be7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/old_version/Search.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms.py" beforeDir="false" afterPath="$PROJECT_DIR$/other_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coraliotech_test_db.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/database/functions_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/functions_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fiche.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files_type/mRNA_collagen.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/old_version/files_type/mRNA_collagen.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files_type/mRNA_complete_cds.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/old_version/files_type/mRNA_complete_cds.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files_type/mRNA_complete_cds_hypothetical.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/old_version/files_type/mRNA_complete_cds_hypothetical.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphic/NCBI.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphic/NCBI_Window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphic/Principal.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphic/Principal_Window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphic/Product.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphic/Product_Window.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphic/product_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphic/product_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poulpator.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object/CDS.py" beforeDir="false" afterPath="$PROJECT_DIR$/object/NCBI_CDS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object/Excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/old_version/Excel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object/Organism.py" beforeDir="false" afterPath="$PROJECT_DIR$/object/NCBI_Organism.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object/Protein.py" beforeDir="false" afterPath="$PROJECT_DIR$/object/NCBI_Protein.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object/Search.py" beforeDir="false" afterPath="$PROJECT_DIR$/object/NCBI_Search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types.json" beforeDir="false" afterPath="$PROJECT_DIR$/old_version/types.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,16 +49,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/old_version" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\claire\PycharmProjects\Coraliotech_28012020\database" />
-      <recent name="C:\Users\claire\PycharmProjects\Coraliotech_20012020" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\claire\PycharmProjects\Coraliotech_28012020\old_version" />
       <recent name="C:\Users\claire\PycharmProjects\Coraliotech_28012020\database" />
       <recent name="C:\Users\claire\PycharmProjects\Coraliotech_28012020" />
+      <recent name="C:\Users\claire\PycharmProjects\Coraliotech_20012020" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\claire\PycharmProjects\Coraliotech_28012020\database" />
       <recent name="C:\Users\claire\PycharmProjects\Coraliotech_20012020" />
     </key>
   </component>
@@ -201,7 +215,21 @@
       <option name="project" value="LOCAL" />
       <updated>1581004292809</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Graphisme PyQT de la fiche produit">
+      <created>1581070591402</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1581070591402</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Restructuration du projet">
+      <created>1581070607319</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1581070607319</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,7 +258,9 @@
     <MESSAGE value="Creation des fonctions de gestion de la base de données" />
     <MESSAGE value="Reparation de l'objet Protein" />
     <MESSAGE value="Implementation de l'enregistrement de donnees NCBI sur la base de donnees Coraliotech" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementation de l'enregistrement de donnees NCBI sur la base de donnees Coraliotech" />
+    <MESSAGE value="Graphisme PyQT de la fiche produit" />
+    <MESSAGE value="Restructuration du projet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restructuration du projet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,11 +1,11 @@
 from Bio import Entrez
 from Bio import SeqIO
 from Bio.SeqUtils.ProtParam import ProteinAnalysis
-from object.Organism import Organism
-from object.CDS import CDS
+from object.NCBI_Organism import NCBI_Organism
+from object.NCBI_CDS import NCBI_CDS
 
 
-class Protein:
+class NCBI_Protein:
 
     def __init__(self, id):
 
@@ -59,7 +59,7 @@ class Protein:
     def set_features(self):
         """set the attributes concerning features"""
         if self.fiche is not None:
-            self.feature_cds = self.get_feature_by_type("CDS")
+            self.feature_cds = self.get_feature_by_type("NCBI_CDS")
             self.feature_gene = self.get_feature_by_type("gene")
             self.feature_source = self.get_feature_by_type("source")
 
@@ -94,7 +94,7 @@ class Protein:
         """set the attribute species"""
         id = self.get_id_taxon()
         if id is not None:
-            self.species = Organism(id)
+            self.species = NCBI_Organism(id)
 
     def get_id_taxon(self):
         """:return the NCBI id of the taxon"""
@@ -104,16 +104,16 @@ class Protein:
         return None
 
     def set_cds(self):
-        """set the attribute cds with a CDS Object"""
+        """set the attribute cds with a NCBI_CDS Object"""
         if self.feature_cds is not None:
             start = self.feature_cds.location.start
             stop = self.feature_cds.location.end
             offset = int(self.feature_cds.qualifiers["codon_start"][0])
             if start is not None and stop is not None :
-                self.cds = CDS(int(start+offset), int(stop), offset)
+                self.cds = NCBI_CDS(int(start + offset), int(stop), offset)
 
     def get_feature_by_type(self, type):
-        """:param type: type of the feature you need (CDS, source, etc)
+        """:param type: type of the feature you need (NCBI_CDS, source, etc)
         :return: the object SeqFeature corresponding to the type"""
         for feature in self.fiche.features:
             if feature.type == type:

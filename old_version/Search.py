@@ -1,14 +1,10 @@
 from Bio import Entrez
 
-from object.Excel import Excel
-from object.Organism import Organism
-
 
 class Search:
 
-    #def __init__(self, organism, request, type):
-    def __init__(self, request):
-        #self.organism = Organism(term=organism)
+    def __init__(self, organism, request, type):
+        # self.organism = NCBI_Organism(term=organism)
         self.request = request
         # self.type = type
         # self.errors = []
@@ -55,7 +51,7 @@ class Search:
     #     proteins = []
     #
     #     for id in enumerate(self.list_ids):
-    #         protein = Protein(id[1])
+    #         protein = NCBI_Protein(id[1])
     #
     #         if protein.molecular_weight is None:
     #             continue

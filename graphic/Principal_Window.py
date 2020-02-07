@@ -1,8 +1,8 @@
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import QPixmap
 from graphic.principal_view import *
-from graphic.NCBI import NCBI
-from graphic.Product import Product
+from graphic.NCBI_Window import NCBI
+from graphic.Product_Window import Product
 from database.functions_db import *
 
 class Principal(QMainWindow, Ui_MainWindow):

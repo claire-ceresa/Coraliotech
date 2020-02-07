@@ -221,7 +221,7 @@ class Ui_MainWindow(object):
         self.prod_label_name.setText(_translate("MainWindow", "Nom produit"))
         self.prod_label_id.setText(_translate("MainWindow", "Identifiant"))
         self.prod_label_source.setText(_translate("MainWindow", "Source"))
-        self.prod_label_cds.setText(_translate("MainWindow", "CDS"))
+        self.prod_label_cds.setText(_translate("MainWindow", "NCBI_CDS"))
         self.prod_label_cds_value.setText(_translate("MainWindow", "1 - 100"))
         self.prod_label_length.setText(_translate("MainWindow", "Taille : "))
         self.prod_label_length_value.setText(_translate("MainWindow", "100 pb"))

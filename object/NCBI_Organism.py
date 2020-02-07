@@ -1,7 +1,7 @@
 from Bio import Entrez
 
 
-class Organism:
+class NCBI_Organism:
 
     def __init__(self, id=None):
         self.id = id
