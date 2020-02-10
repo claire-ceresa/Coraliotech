@@ -39,7 +39,7 @@ class NCBI(QMainWindow, Ui_MainWindow):
                 else:
                     product_not_saved.append(protein.id)
 
-        message = str(nb_product_saved) + "resultat enregistre dans la base de donnees"
+        message = str(nb_product_saved) + " resultat enregistre dans la base de donnees"
         if len(product_not_saved) > 0:
             message = message + "\n " + str(len(product_not_saved)) + " non enregistres : " + " , ".join(product_not_saved)
         self.label_messages.setText(message)
